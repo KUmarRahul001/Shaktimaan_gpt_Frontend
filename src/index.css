@@ -1,8 +1,5 @@
 @tailwind base;
 @tailwind components;
-<<<<<<< HEAD
-@tailwind utilities;
-=======
 @tailwind utilities;
 
 @layer base {
@@ -100,4 +97,3 @@
 .transition-theme {
   @apply transition-all duration-300 ease-in-out;
 }
->>>>>>> 3bcce0a (Project Updated)

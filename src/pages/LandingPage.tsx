@@ -72,7 +72,7 @@ export default function LandingPage() {
 
       {/* Features Section */}
       <Container>
-        <Paper className="py-12 md:py-16 lg:py-20 relative overflow-hidden mt-8 md:mt-12 lg:mt-16">
+        <Paper className="py-12 md:py-16 lg:py-20 relative overflow-hidden mt-8 md:mt-12 lg:mt-16" id="features">
           <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent dark:from-secondary/10" />
           <div className="relative">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12 md:mb-16 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
@@ -117,7 +117,7 @@ export default function LandingPage() {
 
       {/* About Section */}
       <Container>
-        <Paper className="py-12 md:py-16 lg:py-20 relative overflow-hidden mt-8 md:mt-12 lg:mt-16">
+        <Paper className="py-12 md:py-16 lg:py-20 relative overflow-hidden mt-8 md:mt-12 lg:mt-16" id="about">
           <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent dark:from-accent/10" />
           <div className="relative px-4 md:px-8">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
@@ -183,7 +183,7 @@ export default function LandingPage() {
 
       {/* Contact Section */}
       <Container>
-        <Paper className="py-12 md:py-16 lg:py-20 relative overflow-hidden mt-8 md:mt-12 lg:mt-16">
+        <Paper className="py-12 md:py-16 lg:py-20 relative overflow-hidden mt-8 md:mt-12 lg:mt-16" id="contact">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent dark:from-primary/10" />
           <div className="relative px-4 md:px-8">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">

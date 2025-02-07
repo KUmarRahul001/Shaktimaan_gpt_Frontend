@@ -1,25 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+
+// /home/devrahul/project/src/components/TypingIndicator.tsx
+
 export default {
-<<<<<<< HEAD
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  darkMode: 'class',
-  theme: {
-    extend: {
-      colors: {
-        dark: {
-          bg: '#0f172a',
-          surface: '#1e293b',
-          text: '#f8fafc'
-        }
-      }
-    },
-  },
-  plugins: [],
-}
-=======
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
   theme: {
@@ -91,4 +74,3 @@ export default {
   },
   plugins: [],
 };
->>>>>>> 3bcce0a (Project Updated)

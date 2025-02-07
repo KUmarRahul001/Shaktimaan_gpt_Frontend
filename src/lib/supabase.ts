@@ -19,8 +19,8 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
 });
 
 // Handle auth state changes
-supabase.auth.onAuthStateChange((event, _session) => {
-  if (event === 'SIGNED_OUT') {
+supabase.auth.onAuthStateChange((event, session) => {
+  if (event === 'SIGNED_OUT' || event === 'USER_DELETED') {
     localStorage.removeItem('auth-storage');
     localStorage.removeItem('supabase.auth.token');
   }
