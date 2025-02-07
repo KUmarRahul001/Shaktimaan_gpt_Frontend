@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+<<<<<<< HEAD
+@tailwind utilities;
+=======
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Mode - Refined for better contrast */
+    --background: 0 0% 100%; /* #FFFFFF */
+    --foreground: 0 0% 10%; /* #1A1A1A */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 210 76% 59%; /* #4A90E2 - Unchanged */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 215 25% 27%; /* #364B69 - Adjusted for better contrast */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 40% 96%; /* #F1F5FB - Softer muted background */
+    --muted-foreground: 215 25% 27%;
+    --accent: 199 89% 48%; /* #0A9ECD - More vibrant accent */
+    --accent-foreground: 0 0% 100%;
+    --border: 215 32% 92%;
+    --input: 215 32% 92%;
+    --ring: 210 76% 59%;
+  }
+
+  .dark {
+    /* Dark Mode - Refined for better contrast and cohesion */
+    --background: 222 47% 11%; /* #0F172A - Adjusted for depth */
+    --foreground: 210 40% 98%; /* #F8FAFC - Softer white */
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217 91% 60%; /* #3B82F6 - Brighter primary */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 215 25% 27%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%; /* #1E293B - Deeper muted */
+    --muted-foreground: 215 20% 65%;
+    --accent: 199 89% 48%;
+    --accent-foreground: 210 40% 98%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 224 76% 48%;
+  }
+}
+
+@layer components {
+  .btn-gradient {
+    @apply relative inline-flex items-center justify-center;
+    @apply px-6 py-2.5 rounded-full font-medium;
+    @apply text-white shadow-lg;
+    @apply transition-all duration-300 ease-out;
+    @apply hover:scale-105 hover:shadow-xl;
+    background: linear-gradient(135deg, 
+      hsl(var(--primary)) 0%, 
+      hsl(var(--secondary)) 50%,
+      hsl(var(--accent)) 100%
+    );
+    background-size: 200% 200%;
+    animation: gradient-shift 5s ease infinite;
+  }
+
+  .btn-gradient-outline {
+    @apply relative inline-flex items-center justify-center;
+    @apply px-6 py-2.5 rounded-full font-medium;
+    @apply bg-white/10 dark:bg-gray-800/10 backdrop-blur-sm;
+    @apply border-2 border-transparent;
+    @apply text-primary dark:text-primary-foreground;
+    @apply shadow-lg transition-all duration-300 ease-out;
+    @apply hover:scale-105 hover:shadow-xl;
+    background-clip: padding-box;
+    position: relative;
+  }
+
+  .glass-morphism {
+    @apply bg-white/95 dark:bg-gray-800/95 backdrop-blur-lg;
+    @apply border border-white/30 dark:border-gray-700/30;
+    @apply shadow-lg;
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Enhanced transitions */
+.transition-theme {
+  @apply transition-all duration-300 ease-in-out;
+}
+>>>>>>> 3bcce0a (Project Updated)
